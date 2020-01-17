@@ -15,14 +15,28 @@ class Card extends Component {
             <div className="col-md-4 col-sm-4">
               <img
                 src={profile.avatar_url}
-                className="avatar"
+                className="avatar img-responsive"
                 alt="Placeholder"
               />
             </div>
             <div className="col-md-8 col-sm-8">
               <div className="card-body text-left">
-                <h2 className="card-title mb-3 ">{profile.name} </h2>
-                <h5 className="card-text">{profile.company} </h5>
+                <h4 className="card-title">
+                  <strong>Name:</strong> {profile.name}{" "}
+                </h4>
+                <h6>
+                  <a className="card-text" href={`${profile.html_url}`}>
+                    Repo URL{" "}
+                  </a>
+                </h6>
+                <h6>
+                  <small className="card-text">
+                    <strong>Company:</strong> {profile.company}{" "}
+                  </small>
+                </h6>
+                <small className="card-text">
+                  <strong>Location:</strong> {profile.location}{" "}
+                </small>
               </div>
             </div>
           </div>

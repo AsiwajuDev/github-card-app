@@ -38,7 +38,7 @@
 }
 
 .avatar {
-  width: 10rem;
+  max-width: 11rem;
 }
 
 .card {
@@ -53,4 +53,8 @@
 
 .form {
   display: inline-block;
+}
+
+.card-body {
+  padding: 0;
 }
