@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ParticleBg from "particles-bg";
 
 //import component elements
 import Card from "./Component/Card";
@@ -33,7 +34,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="mb-3">GitHub Card App</h1>
+        <ParticleBg bg={true} color={"#cccccc"} num={200} type="cobweb" />
+        <h1 className="mt-3">GitHub Card App</h1>
+        <small>Enter a Github UserName</small>
         <Form onSubmit={this.addNewProfile} />
         <CardList profiles={this.state.profiles} />
       </div>
