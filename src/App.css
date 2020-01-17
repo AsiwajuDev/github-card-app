@@ -38,9 +38,19 @@
 }
 
 .avatar {
-  max-width: 160px;
+  width: 10rem;
 }
 
 .card {
-  box-shadow: 1px 3px #fff;
+  box-shadow: 3px 3px #cccccc;
+}
+
+#row {
+  margin-right: 0;
+  margin-left: -25px;
+  flex-wrap: nowrap;
+}
+
+.form {
+  display: inline-block;
 }

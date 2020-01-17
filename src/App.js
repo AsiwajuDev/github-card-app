@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 //import component elements
 import Card from "./Component/Card";
+import Form from "./Component/Form";
 
 //Import Bootsrap CSS
 import "./App.css";
@@ -29,7 +30,7 @@ const CardList = props => {
   // const profile = this.props;
   return (
     <div>
-      {testData.map(profile => (
+      {props.profiles.map(profile => (
         <Card {...profile} />
       ))}
     </div>
@@ -37,11 +38,16 @@ const CardList = props => {
 };
 
 class App extends Component {
+  state = {
+    profiles: testData
+  };
+
   render() {
     return (
       <div className="App">
         <h1 className="mb-3">GitHub Card App</h1>
-        <CardList />
+        <Form />
+        <CardList profiles={this.state.profiles} />
       </div>
     );
   }

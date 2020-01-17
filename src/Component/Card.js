@@ -9,17 +9,17 @@ class Card extends Component {
       <div>
         <div
           className="card mb-3"
-          style={{ maxWidth: "540px", margin: "auto" }}
+          style={{ maxWidth: "35rem", margin: "auto" }}
         >
-          <div className="row no-gutter s">
-            <div className="col-md-4">
+          <div className="row no-gutter s " id="row">
+            <div className="col-md-4 col-sm-4">
               <img
                 src={profile.avatar_url}
                 className="avatar"
                 alt="Placeholder"
               />
             </div>
-            <div className="col-md-8">
+            <div className="col-md-8 col-sm-8">
               <div className="card-body text-left">
                 <h2 className="card-title mb-3 ">{profile.name} </h2>
                 <h5 className="card-text">{profile.company} </h5>
